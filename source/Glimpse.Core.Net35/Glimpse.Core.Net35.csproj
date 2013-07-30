@@ -66,6 +66,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="..\Glimpse.Core\glimpse.js">
+      <Link>glimpse.js</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\Glimpse.Core\**\*.png" />
     <EmbeddedResource Include="..\Glimpse.Core\Resources.resx" />
   </ItemGroup>
