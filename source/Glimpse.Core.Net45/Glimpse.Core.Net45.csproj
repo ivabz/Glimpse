@@ -71,10 +71,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\Glimpse.JavaScript\glimpse.js">
-      <Link>glimpse.js</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="..\Glimpse.Core\**\*.png" />
     <EmbeddedResource Include="..\Glimpse.Core\Resources.resx" />
   </ItemGroup>
@@ -93,6 +89,9 @@
     <Folder Include="NuSpec\lib\net35\" />
     <Folder Include="NuSpec\lib\net40\" />
     <Folder Include="NuSpec\lib\net45\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="glimpse.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
